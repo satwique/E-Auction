@@ -1,0 +1,22 @@
+
+<mat-card>
+    <mat-action-list>
+        <div mat-subheader>Menu</div>
+        
+        
+        <button mat-list-item (click)="add()">
+            <mat-icon mat-list-icon>add_circle_outline</mat-icon>Add Product
+        </button>
+
+        <button mat-list-item routerLink="/show-bid">
+            <mat-icon mat-list-icon>list</mat-icon>show-bids
+        </button>
+
+        <button mat-list-item routerLink="/seller-login">
+            <mat-icon mat-list-icon>logout</mat-icon>Logout
+        </button>
+        
+    </mat-action-list>
+</mat-card>
+
+

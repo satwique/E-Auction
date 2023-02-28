@@ -1,0 +1,53 @@
+<div class="bootstrap-wrapper" style="margin-top: 40px;">
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-md-3">
+                <button mat-list-item routerLink="/buyer-login">
+                    <mat-icon mat-list-icon>logout</mat-icon>Logout
+                </button>
+            </div>
+            <div class="col-6"  >
+                <mat-card>
+                    <mat-card-header>
+                        
+                    </mat-card-header>
+                    <mat-card-title>
+                        {{buyer.firstName}}
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        {{buyer.lastName}}
+                    </mat-card-subtitle>
+                    <div class="row">
+                        <div class="col-2">
+                    <mat-card-header><strong>{{buyer.product.prodcutName}}</strong></mat-card-header>
+                </div>
+                <div class="col-1">
+                    {{buyer.bidAmount}}
+                </div>
+                <div class="col-2">
+                    {{buyer.city}}
+                </div>
+                <div class="col-2">
+                    {{buyer.state}}
+                </div>
+                <div class="col-2">
+                    {{buyer.phone}}
+                </div>
+                <div class="col-2">
+                    {{buyer.email}}
+                </div>
+                    
+                </div>
+
+             
+                </mat-card>
+                <div class="container text-center">
+                    <button (click)="submit(buyer.id)" type="submit" mat-raised-button color="primary">update</button>
+                    
+                  </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</div>
+            

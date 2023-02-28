@@ -1,0 +1,64 @@
+<mat-card>
+    <h1> Add new Product</h1>
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-8 offset-md-2">
+                <form (ngSubmit)="addproduct()">
+                    <mat-form-field style="width: 100%;" appearance="fill">
+                        <mat-label>Enter Name</mat-label>
+                        <input required
+                       [(ngModel)]="product.prodcutName" type="text" name="prodcutName" placeholder="Enter prodcutName" matInput/>
+
+                    </mat-form-field>
+
+                    <mat-form-field style="width: 100%;" appearance="fill">
+                        <mat-label>Enter shortDescrpition</mat-label>
+                        <input required
+                       [(ngModel)]="product.shortDescription" type="text" name="shortDescription" placeholder="Enter shortDescription" matInput/>
+
+                    </mat-form-field>
+
+                    <mat-form-field style="width: 100%;" appearance="fill">
+                        <mat-label>Enter description</mat-label>
+                        <textarea  [(ngModel)]="product.DetailedDescription" name="DetailedDescription" placeholder="Enter DetailedDescription" matInput rows="5"></textarea>
+
+                    </mat-form-field>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <mat-form-field style="width: 100%;" appearance="fill">
+                                <mat-label>Bid EndDate</mat-label>
+                                <input  [(ngModel)]="product.bidEndDate" type="text" name="bidEndDate" placeholder="Enter bidEndDate" matInput/>
+        
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field style="width: 100%;" appearance="fill">
+                                <mat-label>category</mat-label>
+                                <input  [(ngModel)]="product.category" type="text" name="category" placeholder="Enter category" matInput/>
+        
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <mat-form-field style="width: 100%;" appearance="fill">
+                            <mat-label>startPrice</mat-label>
+                            <input  [(ngModel)]="product.startPrice" type="text" name="startPrice" placeholder="Enter startPrice" matInput/>
+    
+                        </mat-form-field>
+                    </div>
+                    
+                <br/>
+
+                
+
+                  <div class="container text-center" style="margin-top: 15;">
+                    <button mat-raised-button color="primary">Add</button></div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</mat-card>
+
+

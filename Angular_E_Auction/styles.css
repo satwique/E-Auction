@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+.text-center{
+    text-align: center;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    
+        background-image: url("https://img.freepik.com/free-vector/outdoor-farm-market-with-stalls-vendors-clients-summer-day-fair-booths-wooden-kiosks-with-ecological-products_107791-4511.jpg?w=2000");
+    
+      }

@@ -1,0 +1,46 @@
+
+
+#sell{
+    text-align: center;
+    height: 400px;
+    background-color:linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-image: linear-gradient(to bottom right, red, yellow);
+    
+    border-radius: 25px;
+    
+    font-size: 100px;
+    padding: 150px;
+    
+}
+
+
+#buy{
+    text-align: center;
+    height: 400px;
+    background-color: brown;
+    background-image: linear-gradient(to bottom right, blue, green);
+    font-size: 100px;
+    border-radius: 25px;
+    padding: 150px;
+    
+}
+#buy1{
+    background-color: brown;
+}
+
+#sell:hover {
+    background-color: yellow;
+  }
+  #buy:hover {
+    background-color: yellow;
+  }
+  #s1{
+    margin-top: 20px;
+  }
+  #s3{
+   color: aqua;
+   text-shadow: 2px;
+   text-decoration: dotted;
+   font-stretch: expanded;
+
+  }

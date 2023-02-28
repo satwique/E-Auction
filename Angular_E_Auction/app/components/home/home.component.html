@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h1 style="display: inline-block;" id="s3">Welcome to Auction</h1>
+               
+            </div>
+        </div>
+    </div> 
+    <div class="container" id="s1">
+        <div class="row">
+            <div class="col-5" id="sell">
+                
+                <a [routerLink]="'/seller'">Sell</a>
+            </div>
+            <div class="col-2" >
+                
+            </div>
+            <div class="col-5" id="buy">
+                <a [routerLink]="'/buyer'">Buy</a>
+            </div>
+        </div>
+    </div>   
+</div>

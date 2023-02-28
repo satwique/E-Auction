@@ -1,0 +1,28 @@
+<div class="bootstrap-wrapper" >
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-md-6 offset-md-3" style="background-color: antiquewhite;">
+                <form ><mat-form-field  appearance="fill" style="margin-top: 20px; width:100%">
+                    <mat-label>Products</mat-label>
+                    <mat-select  name="product" [(ngModel)]="product1.id" >
+                      <mat-option *ngFor="let p of product" [value]="p.id">
+                        {{p.prodcutName}}
+                      </mat-option>
+                    </mat-select>
+                    <div class="container text-center">
+                        <button (click)="submit(product1)" type="submit" mat-raised-button color="primary">Serach</button>
+                        
+                      </div>
+                  </mat-form-field>
+                 
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<div class="bootstrap-wrapper" style="margin-top: 40px;">
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-md-2"></div>
+            <div class="col-8"  >
+                
+                 <div>
+                <mat-card style="background-color: aqua;" >
+                    
+                    <div class="row">
+                        <div class="col-1">
+                            FirstName                                         
+                        </div>
+
+                        <div class="col-1">
+                            LastName
+                        </div>
+                        <div class="col-1">
+                            City
+                        </div>
+                        <div class="col-1">
+                            state
+                        </div>
+                        <div class="col-3">
+                            email
+                        </div>
+                        <div class="col-3">
+                            phone
+                        </div>
+                        <div class="col-2">
+                            bidAmount
+                        </div>
+                    </div>
+                    
+
+                </mat-card>
+                </div>
+           
+            </div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-8" >
+                <div *ngFor="let b of buyer" style="margin-top: 20px;">
+                 
+                <mat-card >
+                    
+                    <div class="row">
+                        <div class="col-1">
+                            {{b.firstName}}                                           
+                        </div>
+
+                        <div class="col-1">
+                            {{b.lastName}}
+                        </div>
+                        <div class="col-1">
+                            {{b.city}}
+                        </div>
+                        <div class="col-1">
+                            {{b.state}}
+                        </div>
+                        <div class="col-3">
+                            {{b.email}}
+                        </div>
+                        <div class="col-3">
+                            {{b.phone}}
+                        </div>
+                        <div class="col-2">
+                            {{b.bidAmount}}
+                        </div>
+                    </div>
+                    
+
+                </mat-card>
+                </div>
+           
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+</div>
+
